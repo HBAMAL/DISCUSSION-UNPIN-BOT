@@ -1,0 +1,47 @@
+{
+  "name": "Channel Auto Delete",
+  "description": "Telegram Bot to delete the messages forwarded from channel to group automatically. Create your Fork now.",
+  "keywords": [
+    "telegram",
+    "best"
+  ],
+  "logo": "https://telegra.ph/file/bad1ab8ce5f44868e1a7e.jpg",
+  "success_url": "https://telegram.dog/Postdeleter_NsBot",
+  "website": "https://github.com/Ns-AnoNymouS/channel-auto-delete",
+  "repository": "https://github.com/Ns-AnoNymouS/channel-auto-delete",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "BOT_USERNAME": {
+      "description": "Give your bot username as @Postdeleter_NsBot",
+      "value": "@Postdeleter_NsBot"
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
