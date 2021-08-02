@@ -1,33 +1,28 @@
 {
-  "name": "Channel Auto Delete",
-  "description": "Telegram Bot to delete the messages forwarded from channel to group automatically. Create your Fork now.",
+  "name": "TELSA DISCUSS UNPIN",
+  "description": "DISCUSS UNPIN BOT OPENSOURCE",
   "keywords": [
-    "telegram",
-    "best"
+    "DISCUSS UNPIN",
+    "TGBOT"
+    "TELSA"
   ],
-  "logo": "https://telegra.ph/file/bad1ab8ce5f44868e1a7e.jpg",
-  "success_url": "https://telegram.dog/Postdeleter_NsBot",
-  "website": "https://github.com/Ns-AnoNymouS/channel-auto-delete",
-  "repository": "https://github.com/Ns-AnoNymouS/channel-auto-delete",
+  "logo": "https://telegra.ph/file/567835a9cee9e8691e4c2.jpg",
+  "repository": "https://github.com/TELSABOTS/DISCUSSION-UNPIN-BOT",
   "env": {
     "WEBHOOK": {
-      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "description": "LEAVE IT",
       "value": "ANYTHING"
     },
-    "TG_BOT_TOKEN": {
-      "description": "Your bot token, as a string.",
+    "BOT_TOKEN": {
+      "description": "YOUR BOT TOKEN FROM @BotFather",
       "value": ""
     },
-    "BOT_USERNAME": {
-      "description": "Give your bot username as @Postdeleter_NsBot",
-      "value": "@Postdeleter_NsBot"
-    },
-    "APP_ID": {
-      "description": "Get this value from https://my.telegram.org",
+    "API_ID": {
+      "description": "YOUR API ID, USE @TeleORG_Bot  ",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from https://my.telegram.org",
+      "description": "YOUR API HASH, USE @TeleORG_Bot ",
       "value": ""
     }
   },
