@@ -84,7 +84,6 @@ async def cb_data(bot, update):
     else:
         await update.message.delete()
     
-
 @HB.on_message(filters.command(["start"]))
 async def start(bot, update):
     text = START_TEXT.format(update.from_user.mention)
