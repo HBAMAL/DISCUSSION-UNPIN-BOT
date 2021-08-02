@@ -94,6 +94,7 @@ async def start(bot, update):
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )
+    
 @HB.on_message(filters.command(["help"]))
 async def help_message(bot, update):
     text = HELP_TEXT
@@ -103,6 +104,7 @@ async def help_message(bot, update):
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )     
+    
 @HB.on_message(filters.command(["about"]))
 async def about_message(bot, update):
     text = ABOUT_TEXT
@@ -112,6 +114,7 @@ async def about_message(bot, update):
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )     
+    
 @HB.on_message(filters.linked_channel & filters.group)
 async def delete(c, m):
     bot = await c.get_me()
