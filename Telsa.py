@@ -120,7 +120,7 @@ async def delete(c, m):
     bot = await c.get_me()
     bot_permissions = await m.chat.get_member(bot.id)
     if not bot_permissions.can_delete_messages:
-        return await m.reply_text("BRO, MAKE ME AS ADMIN WITH AT LEAST MSG 🗑 PERMISSION ")
+        return await m.reply_text("BRO MAKE ME AS ADMIN WITH AT LEAST MSG 🗑 PERMISSION ")
     await m.delete()
 
 HB.run()
