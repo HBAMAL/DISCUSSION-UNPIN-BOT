@@ -29,11 +29,13 @@ ABOUT_TEXT = """
 📢<b>CHANNEL :</b> ❤️ <a href='https://t.me/telsabots'>TELSA BOTS❤️</a>
 
 🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
+
+🤩SOURCE🤩 :<a> href= 'https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'</a>
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'),
+        InlineKeyboardButton('💟TOTOURIAL💟', url='https://www.youtube.com/embed/nfWjbuQqgJ')
         ],[
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
         InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
@@ -53,11 +55,20 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://youtu.be/sXTg5CB9dy8')
         ],[
         InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
         InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
+        ]]
+    )
+
+SOURCE_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'),
+        InlineKeyboardButton('💟TOTOURIAL💟', url='https://www.youtube.com/embed/nfWjbuQqgJ')
+        ],[
+        InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
         ]]
     )
 
@@ -122,4 +133,13 @@ async def delete(c, m):
         return await m.reply_text("BRO MAKE ME AS ADMIN WITH AT LEAST MSG 🗑 PERMISSION ")
     await m.delete()
 
+@HB.on_message(filters.command(["Source", "s"]))
+async def Source_message(bot, update):
+    text = SOURCE_TEXT
+    reply_markup = SOURCE_BUTTONS
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
+    )     
 HB.run()
