@@ -24,8 +24,12 @@ ABOUT_TEXT = """
  🤖<b>BOT:DISCUSS UNPIN🤖</b>
  
 📢<b>CHANNEL :</b> ❤️ <a href='https://t.me/telsabots'>TELSA BOTS❤️</a>
+
 🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
-🤩SOURCE🤩 :<a href= 'https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'</a>
+
+ 
+🤩<b>SOURCE :</b> 🤩 <a href='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'>CLICK HERE❤️</a>
+
 """
 
 SOURCE_TEXT = """</b>PRESS SOURCE BUTTON FOR SOURCE 
