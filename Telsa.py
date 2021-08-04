@@ -13,25 +13,24 @@ HB = Client(
 
 START_TEXT = """HI {}, 
 I CAN UNPIN MESSAGES IN YOUR GROUP WHEN YOU POST ON THE CONNECTED CHANNEL
-
 MADE BY @TELSABOTS
 """
 HELP_TEXT = """
  ADD ME TO UR DISCUSSION GROUP AS ADMIN 
-
 THEN SEE THE MAGIC 🥳
-
 MADE BY @TELSABOTS
 """
 ABOUT_TEXT = """
  🤖<b>BOT:DISCUSS UNPIN🤖</b>
  
 📢<b>CHANNEL :</b> ❤️ <a href='https://t.me/telsabots'>TELSA BOTS❤️</a>
-
 🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
-
-🤩SOURCE🤩 :<a> href= 'https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'</a>
+🤩SOURCE🤩 :<a href= 'https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'</a>
 """
+
+SOURCE_TEXT = """</b>PRESS SOURCE BUTTON FOR SOURCE 
+AND WATCH TOTOURIAL VIDEO IF YOU WANT ANY HELP</b>"""
+
 START_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'),
@@ -125,14 +124,6 @@ async def about_message(bot, update):
         reply_markup=reply_markup
     )     
     
-@HB.on_message(filters.linked_channel & filters.group)
-async def delete(c, m):
-    bot = await c.get_me()
-    bot_permissions = await m.chat.get_member(bot.id)
-    if not bot_permissions.can_delete_messages:
-        return await m.reply_text("BRO MAKE ME AS ADMIN WITH AT LEAST MSG 🗑 PERMISSION ")
-    await m.delete()
-
 @HB.on_message(filters.command(["Source", "s"]))
 async def Source_message(bot, update):
     text = SOURCE_TEXT
@@ -142,4 +133,14 @@ async def Source_message(bot, update):
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )     
+    
+@HB.on_message(filters.linked_channel & filters.group)
+async def delete(c, m):
+    bot = await c.get_me()
+    bot_permissions = await m.chat.get_member(bot.id)
+    if not bot_permissions.can_delete_messages:
+        return await m.reply_text("BRO MAKE ME AS ADMIN WITH AT LEAST MSG 🗑 PERMISSION ")
+    await m.delete()
+
+
 HB.run()
