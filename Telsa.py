@@ -28,7 +28,7 @@ ABOUT_TEXT = """
 🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
 
  
-🤩<b>SOURCE :</b> 🤩 <a href='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'>CLICK HERE❤️</a>
+🤩<b>SOURCE :</b> 🤩 <a href='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-discussion-unpin_4.html'>CLICK HERE❤️</a>
 
 """
 
@@ -37,8 +37,8 @@ AND WATCH TOTOURIAL VIDEO IF YOU WANT ANY HELP</b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'),
-        InlineKeyboardButton('💟TOTOURIAL💟', url='https://www.youtube.com/embed/nfWjbuQqgJ')
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-discussion-unpin_4.html'),
+        InlineKeyboardButton('💟TOTOURIAL💟', url='https://www.youtube.com/watch?v=sXTg5CB9dy8')
         ],[
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
         InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
@@ -68,8 +68,8 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
 
 SOURCE_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'),
-        InlineKeyboardButton('💟TOTOURIAL💟', url='https://www.youtube.com/embed/nfWjbuQqgJ')
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-discussion-unpin_4.html'),
+        InlineKeyboardButton('💟TOTOURIAL💟', url='https://www.youtube.com/watch?v=sXTg5CB9dy8')
         ],[
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
         ]]
