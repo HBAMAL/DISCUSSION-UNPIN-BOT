@@ -20,4 +20,4 @@
 </details>
 
   
-  <i>**[Watch Deploying Tutorial...](https://youtu.be/KTearEPhumc)**</i>
+  <b>**[YOUTUBE Tutorial...](https://youtu.be/KTearEPhumc)**</b>
